@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--margin is automatically include after Android 4.0-->
+    <dimen name="widget_margin">0dp</dimen>
+    
+</resources>

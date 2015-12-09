@@ -22,7 +22,7 @@ import java.util.Date;
 import java.util.TimeZone;
 import java.util.Vector;
 
-import barqsoft.footballscores.DatabaseContract;
+import barqsoft.footballscores.data.DatabaseContract;
 import barqsoft.footballscores.R;
 
 /**
@@ -54,7 +54,7 @@ public class myFetchService extends IntentService
 
         Uri fetch_build = Uri.parse(BASE_URL).buildUpon().
                 appendQueryParameter(QUERY_TIME_FRAME, timeFrame).build();
-        //Log.v(LOG_TAG, "The url we are looking at is: "+fetch_build.toString()); //log spam
+        Log.v(LOG_TAG, "The url we are looking at is: "+fetch_build.toString()); //log spam
         HttpURLConnection m_connection = null;
         BufferedReader reader = null;
         String JSON_data = null;
